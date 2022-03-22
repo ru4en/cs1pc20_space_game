@@ -22,8 +22,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 static void capFrameRate(long* then, float* remainder);
 
-char* global_dir = "C:\\Users\\di918039\\source\\repos\\cs1pr-portfolio\\project-visual-studio\\SpringProject";
-
 int WinMain(){
 	long then;
 	float remainder;
@@ -36,7 +34,7 @@ int WinMain(){
 	atexit(cleanup);
 
 	initGame();
-
+	
 	initStage();
 
 	then = SDL_GetTicks();
@@ -45,6 +43,7 @@ int WinMain(){
 
 	while (1)
 	{
+
 		prepareScene();
 
 		doInput();

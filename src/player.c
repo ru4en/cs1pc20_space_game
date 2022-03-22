@@ -20,7 +20,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "common.h"
 
-static SDL_Texture *pete[2];
+static SDL_Texture *astronut[3];
+static SDL_Texture *bulletTex[1];
 
 void initPlayer(void)
 {
@@ -31,10 +32,12 @@ void initPlayer(void)
 
 	player->health = 1;
 
-	pete[0] = loadTexture("gfx/pete01.png");
-	pete[1] = loadTexture("gfx/pete02.png");
+	astronut[0] = loadTexture("gfx/astroF1.png");
+	astronut[1] = loadTexture("gfx/astroF2.png");
+	astronut[2] = loadTexture("gfx/astroB1.png");
+	astronut[3] = loadTexture("gfx/astroB2.png");
 
-	player->texture = pete[0];
+	player->texture[0] = astronut[0];
 
 	SDL_QueryTexture(player->texture, NULL, NULL, &player->w, &player->h);
 }
@@ -47,29 +50,44 @@ void doPlayer(void)
 	{
 		player->dx = -PLAYER_MOVE_SPEED;
 
-		player->texture = pete[1];
+		player->texture[2] = astronut[2];
 	}
 
 	if (app.keyboard[SDL_SCANCODE_D])
 	{
 		player->dx = PLAYER_MOVE_SPEED;
 
-		player->texture = pete[0];
+		player->texture[0] = astronut[0];
 	}
 
-	if (app.keyboard[SDL_SCANCODE_I] && player->isOnGround)
+	if (app.keyboard[SDL_SCANCODE_SPACE] && player->isOnGround) // jumping
 	{
-		player->riding = NULL;
-
-		player->dy = -20;
-
-		playSound(SND_JUMP, CH_PLAYER);
+		player->dy = -15;
 	}
 
-	if (app.keyboard[SDL_SCANCODE_SPACE])
+	if (app.keyboard[SDL_SCANCODE_E])
 	{
-		player->x = player->y = 0;
-
-		app.keyboard[SDL_SCANCODE_SPACE] = 0;
+		initBullet();
 	}
 }
+
+
+void initBullet(void)
+{
+	bullet = malloc(sizeof(Entity));
+	memset(bullet, 0, sizeof(Entity));
+	stage.entityTail->next = bullet;
+	stage.entityTail = bullet;
+
+	bullet->health = 1;
+	bullet->x = player->x;
+	bullet->y = player->y;
+	bullet->flags = EF_NONE;
+	bullet->dx = 70;
+
+
+	bulletTex[1] = loadTexture("gfx/shot.png");
+	bullet->texture[1] = bulletTex[1];
+
+	SDL_QueryTexture(bullet->texture, NULL, NULL, &bullet->w, &bullet->h);
+}	

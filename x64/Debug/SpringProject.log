@@ -1,1 +1,13 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(440,5): error MSB8020: The build tools for Visual Studio 2019 (Platform Toolset = 'v142') cannot be found. To build using the v142 build tools, please install Visual Studio 2019 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
+﻿  block.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\block.c(36,43): warning C4047: '=': 'SDL_Texture *[2]' differs in levels of indirection from 'SDL_Texture *'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\block.c(36,43): error C2106: '=': left operand must be l-value
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\block.c(37,29): warning C4047: 'function': 'SDL_Texture *' differs in levels of indirection from 'SDL_Texture *[2]'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\block.c(37,20): warning C4024: 'SDL_QueryTexture': different types for formal and actual parameter 1
+  pizza.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(39,43): warning C4047: '=': 'SDL_Texture *[2]' differs in levels of indirection from 'SDL_Texture *'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(39,43): error C2106: '=': left operand must be l-value
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(40,29): warning C4047: 'function': 'SDL_Texture *' differs in levels of indirection from 'SDL_Texture *[2]'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(40,20): warning C4024: 'SDL_QueryTexture': different types for formal and actual parameter 1
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(50,20): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(52,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...

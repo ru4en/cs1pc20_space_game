@@ -21,9 +21,16 @@ extern "C" {
 
 char * global_dir;
 App app;
-Entity *player;
+Entity* player;
 Stage stage;
 Entity *self;
+
+Entity* bullet;
+
+
+void initMenu(void);
+void initBullet(void);
+void initEnemy(char* line);
 
 char *readFile(const char *filename);
 int collision(int x1, int y1, int w1, int h1, int x2, int y2, int w2, int h2);
@@ -56,6 +63,7 @@ void playMusic(int loop);
 void playSound(int id, int channel);
 void prepareScene(void);
 void presentScene(void);
+
 
 #ifdef __cplusplus
 }

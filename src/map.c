@@ -78,7 +78,7 @@ static void loadTiles(void)
 
 	for (i = 1 ; i <= MAX_TILES ; i++)
 	{
-		sprintf(filename, "gfx/tile%d.png", i);
+		sprintf(filename, "gfx/tile_%d.png", i);
 
 		tiles[i] = loadTexture(filename);
 	}

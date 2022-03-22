@@ -32,7 +32,7 @@ void initEntities(void)
 	loadEnts("data/ents01.dat");
 }
 
-void doEntities(void)
+void doEntities()
 {
 	Entity *e, *prev;
 
@@ -47,7 +47,7 @@ void doEntities(void)
 			e->tick();
 		}
 
-		move(e);
+          		move(e);
 
 		if (e->health <= 0)
 		{
@@ -60,7 +60,6 @@ void doEntities(void)
 			free(e);
 			e = prev;
 		}
-
 		prev = e;
 	}
 
@@ -290,7 +289,11 @@ static void addEntFromLine(char *line)
 	}
 	else if (strcmp(name, "PIZZA") == 0)
 	{
-		initPizza(line);
+		initPizza(line); 
+	}
+	else if (strcmp(name, "ALIEN1") == 0)
+	{
+		initEnemy(line);
 	}
 	else
 	{

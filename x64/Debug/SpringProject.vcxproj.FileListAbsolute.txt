@@ -1,2 +1,3 @@
 C:\Users\wo917566\source\repos\projTest\project\visual-studio\SpringProjectx\x64\Debug\SpringProject.exe
 C:\Users\wo917566\source\repos\projTest\project\visual-studio\SpringProjectx\x64\Debug\SpringProject.pdb
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\x64\Debug\SpringProject.exe

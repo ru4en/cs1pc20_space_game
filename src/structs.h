@@ -54,7 +54,7 @@ struct Entity {
 	int health;
 	int isOnGround;
 	float value;
-	SDL_Texture *texture;
+	SDL_Texture *texture[2];
 	void (*tick)(void);
 	void (*touch)(Entity *other);
 	long flags;
