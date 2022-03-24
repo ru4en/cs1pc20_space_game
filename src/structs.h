@@ -19,7 +19,9 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
 
 typedef struct Texture Texture;
-typedef struct Entity Entity;
+typedef struct Entity Entity; 
+typedef struct Entity Enemy;
+typedef struct Entity Bullet;
 
 typedef struct {
 	void (*logic)(void);
@@ -53,13 +55,14 @@ struct Entity {
 	float dy;
 	int health;
 	int isOnGround;
+	int facing;
 	float value;
-	SDL_Texture *texture[2];
+	SDL_Texture* texture;
 	void (*tick)(void);
-	void (*touch)(Entity *other);
+	void (*touch)(Entity* other);
 	long flags;
-	Entity *riding;
-	Entity *next;
+	Entity* riding;
+	Entity* next;
 };
 
 typedef struct {

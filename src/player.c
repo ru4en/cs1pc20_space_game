@@ -21,7 +21,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "common.h"
 
 static SDL_Texture *astronut[3];
-static SDL_Texture *bulletTex[1];
 
 void initPlayer(void)
 {
@@ -37,7 +36,7 @@ void initPlayer(void)
 	astronut[2] = loadTexture("gfx/astroB1.png");
 	astronut[3] = loadTexture("gfx/astroB2.png");
 
-	player->texture[0] = astronut[0];
+	player->texture = astronut[0];
 
 	SDL_QueryTexture(player->texture, NULL, NULL, &player->w, &player->h);
 }
@@ -50,14 +49,16 @@ void doPlayer(void)
 	{
 		player->dx = -PLAYER_MOVE_SPEED;
 
-		player->texture[2] = astronut[2];
+		player->texture = astronut[2];
+		player->facing = LEFT;
 	}
 
 	if (app.keyboard[SDL_SCANCODE_D])
 	{
 		player->dx = PLAYER_MOVE_SPEED;
 
-		player->texture[0] = astronut[0];
+		player->texture = astronut[0];
+		player->facing = RIGHT;
 	}
 
 	if (app.keyboard[SDL_SCANCODE_SPACE] && player->isOnGround) // jumping
@@ -65,29 +66,13 @@ void doPlayer(void)
 		player->dy = -15;
 	}
 
-	if (app.keyboard[SDL_SCANCODE_E])
+	if (app.keyboard[SDL_SCANCODE_LSHIFT])
 	{
 		initBullet();
 	}
+
+	if (app.keyboard[SDL_SCANCODE_R] && player->health <= 0)
+	{
+		initPlayer();
+	}
 }
-
-
-void initBullet(void)
-{
-	bullet = malloc(sizeof(Entity));
-	memset(bullet, 0, sizeof(Entity));
-	stage.entityTail->next = bullet;
-	stage.entityTail = bullet;
-
-	bullet->health = 1;
-	bullet->x = player->x;
-	bullet->y = player->y;
-	bullet->flags = EF_NONE;
-	bullet->dx = 70;
-
-
-	bulletTex[1] = loadTexture("gfx/shot.png");
-	bullet->texture[1] = bulletTex[1];
-
-	SDL_QueryTexture(bullet->texture, NULL, NULL, &bullet->w, &bullet->h);
-}	

@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="src\attack.c" />
     <ClCompile Include="src\block.c" />
     <ClCompile Include="src\camera.c" />
     <ClCompile Include="src\draw.c" />
+    <ClCompile Include="src\enemy.c" />
     <ClCompile Include="src\entities.c" />
     <ClCompile Include="src\init.c" />
     <ClCompile Include="src\input.c" />

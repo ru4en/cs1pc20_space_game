@@ -54,7 +54,7 @@ static void tick(void)
 
 static void touch(Entity *other)
 {
-	if (self->health > 0 && other == player)
+	if (self->health > 0 && other == player )
 	{
 		self->health = 0;
 
@@ -63,7 +63,6 @@ static void touch(Entity *other)
 		if (stage.pizzaFound == stage.pizzaTotal)
 		{
 			playSound(SND_PIZZA_DONE, CH_PIZZA);
-			exit(1);
 		}
 		else
 		{
