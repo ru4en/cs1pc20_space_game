@@ -78,4 +78,5 @@ static void drawHud(void)
 
 	drawText(SCREEN_WIDTH - 5, 5, 255, 255, 255, TEXT_RIGHT, "PIZZA %d/%d", stage.pizzaFound, stage.pizzaTotal);
 	drawText(SCREEN_WIDTH - 500, 5, 255, 255, 255, TEXT_RIGHT, "HEALTH %d", player->health);
+	drawText(SCREEN_WIDTH - 1000, 5, 255, 255, 255, TEXT_RIGHT, "Y %.1f X %.1f", player->y, player->x);
 }

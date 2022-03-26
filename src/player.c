@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "common.h"
 
-static SDL_Texture *astronut[3];
+static SDL_Texture *astronut[7];
 
 void initPlayer(void)
 {
@@ -31,12 +31,20 @@ void initPlayer(void)
 
 	player->health = 1;
 
-	astronut[0] = loadTexture("gfx/astroF1.png");
-	astronut[1] = loadTexture("gfx/astroF2.png");
-	astronut[2] = loadTexture("gfx/astroB1.png");
-	astronut[3] = loadTexture("gfx/astroB2.png");
+	astronut[0] = loadTexture("gfx/astroF1.png"); // stand faceing right
+	astronut[1] = loadTexture("gfx/astroB1.png"); // stand faceing left
 
-	player->texture = astronut[0];
+	astronut[2] = loadTexture("gfx/astroF2.png"); // walking faceing right
+	astronut[3] = loadTexture("gfx/astroB2.png"); // walking faceing left
+
+	astronut[4] = loadTexture("gfx/astroFJ.png"); // jump faceing right
+	astronut[5] = loadTexture("gfx/astroBJ.png"); // jump faceing left
+
+	astronut[6] = loadTexture("gfx/astroFS.png"); // shoot faceing right
+	astronut[7] = loadTexture("gfx/astroBS.png"); // shoot faceing left
+
+
+	player->texture = astronut[2];
 
 	SDL_QueryTexture(player->texture, NULL, NULL, &player->w, &player->h);
 }
@@ -49,7 +57,7 @@ void doPlayer(void)
 	{
 		player->dx = -PLAYER_MOVE_SPEED;
 
-		player->texture = astronut[2];
+		player->texture = astronut[3];
 		player->facing = LEFT;
 	}
 
@@ -57,7 +65,7 @@ void doPlayer(void)
 	{
 		player->dx = PLAYER_MOVE_SPEED;
 
-		player->texture = astronut[0];
+		player->texture = astronut[2];
 		player->facing = RIGHT;
 	}
 
@@ -74,5 +82,22 @@ void doPlayer(void)
 	if (app.keyboard[SDL_SCANCODE_R] && player->health <= 0)
 	{
 		initPlayer();
+	}
+
+	if (player->facing == RIGHT && player->dx == 0)
+	{
+		player->texture = astronut[0];
+	}
+	if (player->facing == LEFT && player->dx == 0)
+	{
+		player->texture = astronut[1];
+	}
+	if (player->facing == RIGHT && !player->isOnGround)
+	{
+		player->texture = astronut[4];
+	}
+	if (player->facing == LEFT && !player->isOnGround)
+	{
+		player->texture = astronut[5];
 	}
 }

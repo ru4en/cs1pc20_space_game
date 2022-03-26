@@ -18,6 +18,7 @@ void initBullet(void)
 	bullet->touch = touch;
 	bullet->tick = tick;
 
+
 	if (player->facing == RIGHT)
 	{
 		bullet->dx = 70;
@@ -27,8 +28,9 @@ void initBullet(void)
 		bullet->dx = -70;
 	}
 
-	bulletTex[1] = loadTexture("gfx/shot.png");
-	bullet->texture = bulletTex[1];
+	bulletTex[0] = loadTexture("gfx/shot.png");
+	bulletTex[1] = loadTexture("gfx/bulletT.png");
+	bullet->texture = bulletTex[0];
 
 	SDL_QueryTexture(bullet->texture, NULL, NULL, &bullet->w, &bullet->h);
 }
@@ -40,7 +42,6 @@ static void touch(Entity* other)
 		self->health -= 1;
 	}
 }
-
 
 static void tick(void)
 {

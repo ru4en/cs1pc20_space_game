@@ -1,77 +1,13 @@
-﻿  main.c
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\main.c(67,24): warning C4244: '=': conversion from 'float' to 'long', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\main.c(82,21): warning C4305: '+=': truncation from 'double' to 'float'
-  attack.c
-  block.c
-  camera.c
-  draw.c
-  enemy.c
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(39,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(39,72): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(47,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(47,72): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(49,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(49,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(49,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(49,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-  entities.c
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(117,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(120,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(129,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(140,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(148,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(151,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(160,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(171,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(187,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(187,41): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(187,63): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(187,73): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(239,41): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(239,64): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-  init.c
-  input.c
-  io.c
-  map.c
-  pizza.c
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(50,20): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\pizza.c(52,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  platform.c
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(53,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(53,72): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(61,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(61,72): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-  player.c
-  sound.c
-  stage.c
-  text.c
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\text.c(43,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  textures.c
-  util.c
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\util.c(38,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\util.c(41,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-  LINK : 0 new modules and 19 (out of 57) modules have changed since prior linking
-  LINK : too many modules have changed since prior linking; performing full link
+﻿  attack.c
+  LINK : 0 new modules and 1 (out of 57) modules have changed since prior linking
+  LINK : symbol '__real@00000000' not defined by modified objects but referenced by non-modified objects; performing full link
   Invoking LINK.EXE:
-   /ERRORREPORT:PROMPT @C:\Users\ru4en\AppData\Local\Temp\tmpc73c4c46e0024662953a2358310fb9ed.rsp
+  
+  Starting pass 1
+   /ERRORREPORT:PROMPT @C:\Users\ru4en\AppData\Local\Temp\tmp5311b7822c2041dd95253524c6459983.rsp
    /nologo
    /incremental
    /fullbuild
-  
-  Starting pass 1
   Processed /DEFAULTLIB:MSVCRTD
   Processed /DEFAULTLIB:OLDNAMES
   Processed /DEFAULTLIB:uuid.lib
@@ -358,10 +294,11 @@ C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\util.c(41,17): warning C4244:
           Referenced in enemy.obj
           Loaded MSVCRTD.lib(gs_cookie.obj)
         Found _fltused
+          Referenced in util.obj
           Referenced in pizza.obj
           Referenced in platform.obj
           Referenced in player.obj
-          Referenced in util.obj
+          Referenced in stage.obj
           Referenced in main.obj
           Referenced in attack.obj
           Referenced in enemy.obj
@@ -992,27 +929,27 @@ C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\util.c(41,17): warning C4244:
    /v
    /x
    /fo
-   "C:\Users\ru4en\AppData\Local\Temp\lnk{74352D6C-32C3-4F3D-8C46-A46A160783E6}.tmp"
-   "C:\Users\ru4en\AppData\Local\Temp\lnk{4E5696E4-37DC-4E91-AE90-62B050A3BEDE}.tmp"
+   "C:\Users\ru4en\AppData\Local\Temp\lnk{EFEE5BCD-C7AD-450A-A788-E278A337B934}.tmp"
+   "C:\Users\ru4en\AppData\Local\Temp\lnk{6BB8D032-5A77-4F8F-9DE2-07CD9493AF05}.tmp"
   Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
   
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
   
-  Creating C:\Users\ru4en\AppData\Local\Temp\lnk{74352D6C-32C3-4F3D-8C46-A46A160783E6}.tmp
+  Creating C:\Users\ru4en\AppData\Local\Temp\lnk{EFEE5BCD-C7AD-450A-A788-E278A337B934}.tmp
   
   Using codepage 1252 as default
   
-  C:\Users\ru4en\AppData\Local\Temp\lnk{4E5696E4-37DC-4E91-AE90-62B050A3BEDE}.tmp.
+  C:\Users\ru4en\AppData\Local\Temp\lnk{6BB8D032-5A77-4F8F-9DE2-07CD9493AF05}.tmp.
   Writing 24:1,	lang:0x409,	size 381
   
   Invoking cvtres.exe:
    /machine:amd64
    /verbose
-   /out:"C:\Users\ru4en\AppData\Local\Temp\lnk{B556A09E-1F14-4A6C-9EE2-FFD4978647F2}.tmp"
+   /out:"C:\Users\ru4en\AppData\Local\Temp\lnk{22A0DFD1-E752-4A2D-A4F8-2E5D34D00094}.tmp"
    /readonly
    "x64\Debug\SpringProject.res"
-   "C:\Users\ru4en\AppData\Local\Temp\lnk{74352D6C-32C3-4F3D-8C46-A46A160783E6}.tmp"
+   "C:\Users\ru4en\AppData\Local\Temp\lnk{EFEE5BCD-C7AD-450A-A788-E278A337B934}.tmp"
   Microsoft (R) Windows Resource To Object Converter Version 14.29.30136.0
   Copyright (C) Microsoft Corporation.  All rights reserved.
   

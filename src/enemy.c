@@ -3,6 +3,7 @@
 
 static void tick(void);
 static void touch(Entity* other);
+SDL_Texture* texture[1];
 
 
 void initEnemy(char* line)
@@ -13,7 +14,6 @@ void initEnemy(char* line)
 	memset(e, 0, sizeof(Enemy));
 	stage.entityTail->next = e;
 	stage.entityTail = e;
-	SDL_Texture* texture[3];
 
 	sscanf(line, "%*s %f %f %f %f", &e->sx, &e->sy, &e->ex, &e->ey);
 
@@ -25,9 +25,9 @@ void initEnemy(char* line)
 	e->tick = tick;
 	e->touch = touch;
 
-	texture[0] = loadTexture("gfx/astroF1.png");
-	texture[1] = loadTexture("gfx/astroB2.png");
-	e->texture = texture[1];
+	texture[0] = loadTexture("gfx/alienF1.png");
+	texture[1] = loadTexture("gfx/alienB1.png");
+	e->texture = texture[0];
 
 
 	SDL_QueryTexture(e->texture, NULL, NULL, &e->w, &e->h);
@@ -36,24 +36,29 @@ void initEnemy(char* line)
 
 static void tick(void)
 {
-	if (abs(self->x - self->sx) < PLATFORM_SPEED && abs(self->y - self->sy) < PLATFORM_SPEED)
+	if (abs(self->x - self->sx) < PLATFORM_SPEED)
 	{
 		calcSlope(self->ex, self->ey, self->x, self->y, &self->dx, &self->dy);
 
 		self->dx *= PLATFORM_SPEED;
 		self->dy *= PLATFORM_SPEED;
+		self->texture = texture[0];
 	}
 
-	if (abs(self->x - self->ex) < PLATFORM_SPEED && abs(self->y - self->ey) < PLATFORM_SPEED)
+	if (abs(self->x - self->ex) < PLATFORM_SPEED)
 	{
 		calcSlope(self->sx, self->sy, self->x, self->y, &self->dx, &self->dy);
 
 		self->dx *= PLATFORM_SPEED;
 		self->dy *= PLATFORM_SPEED;
+		self->texture = texture[1];
 	}
 }
 
 static void touch(Enemy* other)
 {
-	other->health -= 1;
+	if (other == player)
+	{
+		other->health -= 1; 
+	}
 }

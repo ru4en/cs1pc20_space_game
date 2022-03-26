@@ -21,7 +21,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 typedef struct Texture Texture;
 typedef struct Entity Entity; 
 typedef struct Entity Enemy;
-typedef struct Entity Bullet;
+typedef struct Bullet Bullet;
 
 typedef struct {
 	void (*logic)(void);

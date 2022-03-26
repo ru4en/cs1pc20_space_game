@@ -49,7 +49,7 @@ static void addTextureToCache(char *name, SDL_Texture *sdlTexture)
 	texture->texture = sdlTexture;
 }
 
-SDL_Texture* loadTexture(char* filename)
+SDL_Texture* loadTexture(char* filename[6])
 {
 	SDL_Texture *texture;
 
