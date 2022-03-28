@@ -67,13 +67,13 @@ enum
 enum
 {
 	SND_JUMP,
-	SND_PIZZA,
-	SND_PIZZA_DONE,
+	SND_ORB,
+	SND_ORB_DONE,
 	SND_MAX
 };
 
 enum
 {
 	CH_PLAYER,
-	CH_PIZZA
+	CH_ORB
 };

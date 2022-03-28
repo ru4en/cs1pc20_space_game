@@ -29,8 +29,9 @@
     <ClCompile Include="src\init.c" />
     <ClCompile Include="src\input.c" />
     <ClCompile Include="src\io.c" />
+    <ClCompile Include="src\menu.c" />
     <ClCompile Include="src\map.c" />
-    <ClCompile Include="src\pizza.c" />
+    <ClCompile Include="src\orb.c" />
     <ClCompile Include="src\platform.c" />
     <ClCompile Include="src\player.c" />
     <ClCompile Include="src\sound.c" />

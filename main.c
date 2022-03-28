@@ -33,9 +33,10 @@ int WinMain(){
 
 	atexit(cleanup);
 
+	initMenu();
+
 	initGame();
-	
-	initStage();
+
 
 	then = SDL_GetTicks();
 

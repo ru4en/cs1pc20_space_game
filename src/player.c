@@ -29,7 +29,8 @@ void initPlayer(void)
 	stage.entityTail->next = player;
 	stage.entityTail = player;
 
-	player->health = 1;
+	player->health = 10;
+	stage.bulletCount = 100000;
 
 	astronut[0] = loadTexture("gfx/astroF1.png"); // stand faceing right
 	astronut[1] = loadTexture("gfx/astroB1.png"); // stand faceing left
@@ -69,10 +70,11 @@ void doPlayer(void)
 		player->facing = RIGHT;
 	}
 
-	if (app.keyboard[SDL_SCANCODE_SPACE] && player->isOnGround) // jumping
+	if (app.keyboard[SDL_SCANCODE_SPACE] ) // jumping && player->isOnGround
 	{
 		player->dy = -15;
 	}
+
 
 	if (app.keyboard[SDL_SCANCODE_LSHIFT])
 	{
@@ -82,6 +84,13 @@ void doPlayer(void)
 	if (app.keyboard[SDL_SCANCODE_R] && player->health <= 0)
 	{
 		initPlayer();
+	}
+
+
+	if (app.keyboard[SDL_SCANCODE_ESCAPE])
+	{
+		player->health = 0;
+		initMenu();
 	}
 
 	if (player->facing == RIGHT && player->dx == 0)

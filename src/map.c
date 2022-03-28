@@ -32,7 +32,30 @@ void initMap(void)
 
 	loadTiles();
 
-	loadMap("data/map01.dat");
+	if (level == 1)
+	{
+		loadMap("data/map01.dat");
+	}
+	else if (level == 2)
+	{
+		loadMap("data/map02.dat");
+	}
+	else if (level == 3)
+	{
+		loadMap("data/map03.dat");
+	}
+	else if (level == 4)
+	{
+		loadMap("data/map04.dat");
+	}
+	else if (level == 5)
+	{
+		loadMap("data/map05.dat");
+	}
+	else
+	{
+		loadMap("data/map01.dat");
+	}
 }
 
 void drawMap(void)

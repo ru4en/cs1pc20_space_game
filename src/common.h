@@ -24,13 +24,14 @@ App app;
 Entity* player;
 Stage stage;
 Entity *self;
-
 Entity* bullet;
+int* level;
 
 
 void initMenu(void);
 void initBullet(void);
 void initEnemy(char* line);
+void levelCompleted(int level);
 
 char *readFile(const char *filename);
 int collision(int x1, int y1, int w1, int h1, int x2, int y2, int w2, int h2);
@@ -52,7 +53,7 @@ void initEntities(void);
 void initFonts(void);
 void initGame(void);
 void initMap(void);
-void initPizza(char *line);
+void initOrb(char *line);
 void initPlatform(char *line);
 void initPlayer(void);
 void initSDL(void);

@@ -29,7 +29,31 @@ static void addEntFromLine(char *line);
 
 void initEntities(void)
 {
-	loadEnts("data/ents01.dat");
+
+	if (level == 1)
+	{
+		loadEnts("data/ents01.dat");
+	}
+	else if (level == 2)
+	{
+		loadEnts("data/ents02.dat");
+	}
+	else if (level == 3)
+	{
+		loadEnts("data/ents03.dat");
+	}
+	else if (level == 4)
+	{
+		loadEnts("data/ents04.dat");
+	}
+	else if (level == 5)
+	{
+		loadEnts("data/ents05.dat");
+	}
+	else
+	{
+		loadEnts("data/ents01.dat");
+	}
 }
 
 void doEntities()
@@ -287,13 +311,21 @@ static void addEntFromLine(char *line)
 	{
 		initPlatform(line);
 	}
-	else if (strcmp(name, "PIZZA") == 0)
+	else if (strcmp(name, "ORB") == 0)
 	{
-		initPizza(line); 
+		initOrb(line); 
 	}
 	else if (strcmp(name, "ALIEN1") == 0)
 	{
 		initEnemy(line);
+	}
+	else if (strcmp(name, "ROCK1") == 0)
+	{
+		initRock1(line);
+	}
+	else if (strcmp(name, "ROCK2") == 0)
+	{
+		initRock2(line);
 	}
 	else
 	{

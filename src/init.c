@@ -55,9 +55,14 @@ void initSDL(void)
 
 void initGame(void)
 {
+	SDL_Texture* newGame = loadTexture("gfx/bg.jpg");
+	SDL_RenderCopy(app.renderer, newGame, NULL, NULL);
+	SDL_RenderPresent(app.renderer);
 	initFonts();
 
 	initSounds();
+
+	initMenu();
 
 	loadMusic("music/one_0.mp3");
 

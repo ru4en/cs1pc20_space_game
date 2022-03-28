@@ -12,12 +12,16 @@ void initBullet(void)
 	stage.entityTail->next = bullet;
 	stage.entityTail = bullet;
 
+
 	bullet->health = 1;
 	bullet->x = player->x;
 	bullet->y = player->y;
 	bullet->touch = touch;
 	bullet->tick = tick;
+	bullet->dx = 70;
 
+	if (stage.bulletCount <= 0) { return; }
+	else{stage.bulletCount -= 1;}
 
 	if (player->facing == RIGHT)
 	{
@@ -29,7 +33,6 @@ void initBullet(void)
 	}
 
 	bulletTex[0] = loadTexture("gfx/shot.png");
-	bulletTex[1] = loadTexture("gfx/bulletT.png");
 	bullet->texture = bulletTex[0];
 
 	SDL_QueryTexture(bullet->texture, NULL, NULL, &bullet->w, &bullet->h);
@@ -40,6 +43,8 @@ static void touch(Entity* other)
 	if (other == self)
 	{
 		self->health -= 1;
+		player->value += 1;
+
 	}
 }
 

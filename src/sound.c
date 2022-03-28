@@ -65,6 +65,6 @@ static void loadSounds(void)
 	else {
 		printf("Loaded sound successfully\n");
 	}
-	sounds[SND_PIZZA] = Mix_LoadWAV("sound/90134__pierrecartoons1979__found-item.ogg");
-	sounds[SND_PIZZA_DONE] = Mix_LoadWAV("sound/449069__ricniclas__fanfare.ogg");
+	sounds[SND_ORB] = Mix_LoadWAV("sound/90134__pierrecartoons1979__found-item.ogg");
+	sounds[SND_ORB_DONE] = Mix_LoadWAV("sound/449069__ricniclas__fanfare.ogg");
 }

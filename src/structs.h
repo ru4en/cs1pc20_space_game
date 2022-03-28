@@ -21,7 +21,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 typedef struct Texture Texture;
 typedef struct Entity Entity; 
 typedef struct Entity Enemy;
-typedef struct Bullet Bullet;
 
 typedef struct {
 	void (*logic)(void);
@@ -55,6 +54,7 @@ struct Entity {
 	float dy;
 	int health;
 	int isOnGround;
+	int count;
 	int facing;
 	float value;
 	SDL_Texture* texture;
@@ -69,5 +69,6 @@ typedef struct {
 	SDL_Point camera;
 	int map[MAP_WIDTH][MAP_HEIGHT];
 	Entity entityHead, *entityTail;
-	int pizzaTotal, pizzaFound;
+	int orbTotal, orbFound;
+	int bulletCount;
 } Stage;

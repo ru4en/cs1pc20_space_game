@@ -1,13 +1,100 @@
-﻿  attack.c
-  LINK : 0 new modules and 1 (out of 57) modules have changed since prior linking
-  LINK : symbol '__real@00000000' not defined by modified objects but referenced by non-modified objects; performing full link
+﻿  main.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\main.c(68,24): warning C4244: '=': conversion from 'float' to 'long', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\main.c(83,21): warning C4305: '+=': truncation from 'double' to 'float'
+  attack.c
+  block.c
+  camera.c
+  draw.c
+  enemy.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(39,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(41,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(48,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(50,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(50,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(50,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\enemy.c(50,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+  entities.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(33,16): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(37,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(41,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(45,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(49,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(141,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(144,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(153,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(164,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(172,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(175,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(184,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(195,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(211,35): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(211,41): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(211,63): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(211,73): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(263,41): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(263,64): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(324,12): warning C4013: 'initRock1' undefined; assuming extern returning int
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\entities.c(328,12): warning C4013: 'initRock2' undefined; assuming extern returning int
+  init.c
+  input.c
+  io.c
+  map.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\map.c(35,16): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\map.c(39,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\map.c(43,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\map.c(47,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\map.c(51,21): warning C4047: '==': 'int *' differs in levels of indirection from 'int'
+  menu.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\menu.c(24,13): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\menu.c(29,13): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\menu.c(34,13): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\menu.c(39,13): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\menu.c(44,13): warning C4047: '=': 'int *' differs in levels of indirection from 'int'
+  orb.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\orb.c(50,20): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\orb.c(52,29): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  platform.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(53,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(53,72): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(55,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(61,28): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(61,72): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,21): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,31): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,40): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\platform.c(63,49): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+  player.c
+  sound.c
+  stage.c
+  text.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\text.c(43,30): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  textures.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\textures.c(52,32): warning C4028: formal parameter 1 different from declaration
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\textures.c(56,31): warning C4047: 'function': 'char *' differs in levels of indirection from 'char **'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\textures.c(56,23): warning C4024: 'getTexture': different types for formal and actual parameter 1
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\textures.c(61,51): warning C4047: 'function': 'const char *' differs in levels of indirection from 'char **'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\textures.c(61,43): warning C4024: 'IMG_LoadTexture': different types for formal and actual parameter 2
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\textures.c(65,29): warning C4047: 'function': 'char *' differs in levels of indirection from 'char **'
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\textures.c(65,21): warning C4024: 'addTextureToCache': different types for formal and actual parameter 1
+  util.c
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\util.c(38,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\src\util.c(41,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  LINK : 0 new modules and 20 (out of 58) modules have changed since prior linking
+  LINK : too many modules have changed since prior linking; performing full link
   Invoking LINK.EXE:
-  
-  Starting pass 1
-   /ERRORREPORT:PROMPT @C:\Users\ru4en\AppData\Local\Temp\tmp5311b7822c2041dd95253524c6459983.rsp
+   /ERRORREPORT:PROMPT @C:\Users\ru4en\AppData\Local\Temp\tmpbd90606adf854c8c85f2a6433bc86d3f.rsp
    /nologo
    /incremental
    /fullbuild
+  
+  Starting pass 1
   Processed /DEFAULTLIB:MSVCRTD
   Processed /DEFAULTLIB:OLDNAMES
   Processed /DEFAULTLIB:uuid.lib
@@ -28,12 +115,13 @@
       Searching C:\Users\ru4en\OneDrive\Desktop\SpringProjectx\\SDL2\lib\sdl2.lib:
         Found SDL_GetTicks
           Referenced in main.obj
+          Referenced in menu.obj
           Loaded sdl2.lib(SDL2.dll)
         Found SDL_Delay
           Referenced in main.obj
           Loaded sdl2.lib(SDL2.dll)
         Found SDL_QueryTexture
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in player.obj
           Referenced in attack.obj
@@ -50,9 +138,14 @@
           Loaded sdl2.lib(SDL2.dll)
         Found SDL_RenderCopy
           Referenced in draw.obj
+          Referenced in init.obj
+          Referenced in menu.obj
+          Referenced in stage.obj
           Loaded sdl2.lib(SDL2.dll)
         Found SDL_RenderPresent
           Referenced in draw.obj
+          Referenced in init.obj
+          Referenced in menu.obj
           Loaded sdl2.lib(SDL2.dll)
         Found SDL_LogMessage
           Referenced in entities.obj
@@ -70,6 +163,7 @@
           Loaded sdl2.lib(SDL2.dll)
         Found SDL_ShowCursor
           Referenced in init.obj
+          Referenced in menu.obj
           Loaded sdl2.lib(SDL2.dll)
         Found SDL_SetHint
           Referenced in init.obj
@@ -175,6 +269,7 @@
           Referenced in init.obj
           Loaded sdl2_image.lib(SDL2_image.dll)
         Found IMG_LoadTexture
+          Referenced in menu.obj
           Referenced in textures.obj
           Loaded sdl2_image.lib(SDL2_image.dll)
         Found __IMPORT_DESCRIPTOR_SDL2_image
@@ -191,7 +286,7 @@
           Loaded MSVCRTD.lib(utility.obj)
         Found _RTC_CheckStackVars
           Referenced in text.obj
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in sound.obj
           Referenced in stage.obj
@@ -205,17 +300,18 @@
           Referenced in enemy.obj
           Loaded MSVCRTD.lib(stack.obj)
         Found _RTC_InitBase
+          Referenced in stage.obj
           Referenced in text.obj
           Referenced in textures.obj
           Referenced in util.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in player.obj
           Referenced in sound.obj
-          Referenced in stage.obj
           Referenced in input.obj
           Referenced in io.obj
+          Referenced in menu.obj
           Referenced in map.obj
-          Referenced in pizza.obj
           Referenced in draw.obj
           Referenced in enemy.obj
           Referenced in entities.obj
@@ -226,17 +322,18 @@
           Referenced in camera.obj
           Loaded MSVCRTD.lib(init.obj)
         Found __CheckForDebuggerJustMyCode
+          Referenced in stage.obj
           Referenced in text.obj
           Referenced in textures.obj
           Referenced in util.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in player.obj
           Referenced in sound.obj
-          Referenced in stage.obj
           Referenced in input.obj
           Referenced in io.obj
+          Referenced in menu.obj
           Referenced in map.obj
-          Referenced in pizza.obj
           Referenced in draw.obj
           Referenced in enemy.obj
           Referenced in entities.obj
@@ -248,7 +345,7 @@
           Loaded MSVCRTD.lib(debugger_jmc.obj)
         Found __GSHandlerCheck
           Referenced in text.obj
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in sound.obj
           Referenced in stage.obj
@@ -264,7 +361,7 @@
         Found __security_check_cookie
           Referenced in text.obj
           Referenced in MSVCRTD.lib(gshandler.obj)
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in sound.obj
           Referenced in stage.obj
@@ -280,7 +377,7 @@
         Found __security_cookie
           Referenced in text.obj
           Referenced in MSVCRTD.lib(amdsecgs.obj)
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in sound.obj
           Referenced in stage.obj
@@ -295,7 +392,7 @@
           Loaded MSVCRTD.lib(gs_cookie.obj)
         Found _fltused
           Referenced in util.obj
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in player.obj
           Referenced in stage.obj
@@ -414,7 +511,7 @@
           Referenced in entities.obj
           Referenced in io.obj
           Referenced in map.obj
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in main.obj
           Referenced in attack.obj
           Referenced in block.obj
@@ -461,7 +558,7 @@
           Loaded vcruntimed.lib(VCRUNTIME140D.dll)
       Searching C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64\ucrtd.lib:
         Found __imp_malloc
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in player.obj
           Referenced in textures.obj
@@ -471,7 +568,7 @@
           Referenced in io.obj
           Loaded ucrtd.lib(ucrtbased.dll)
         Found __imp___stdio_common_vsscanf
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Referenced in platform.obj
           Referenced in block.obj
           Referenced in enemy.obj
@@ -523,7 +620,7 @@
           Referenced in text.obj
           Loaded ucrtd.lib(ucrtbased.dll)
         Found sin
-          Referenced in pizza.obj
+          Referenced in orb.obj
           Loaded ucrtd.lib(ucrtbased.dll)
         Found strlen
           Referenced in text.obj
@@ -929,27 +1026,27 @@
    /v
    /x
    /fo
-   "C:\Users\ru4en\AppData\Local\Temp\lnk{EFEE5BCD-C7AD-450A-A788-E278A337B934}.tmp"
-   "C:\Users\ru4en\AppData\Local\Temp\lnk{6BB8D032-5A77-4F8F-9DE2-07CD9493AF05}.tmp"
+   "C:\Users\ru4en\AppData\Local\Temp\lnk{937C0EA0-A332-4602-8EA1-69AB9A41A624}.tmp"
+   "C:\Users\ru4en\AppData\Local\Temp\lnk{174027F6-21D0-4A72-9401-35A2CF77F5DC}.tmp"
   Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
   
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
   
-  Creating C:\Users\ru4en\AppData\Local\Temp\lnk{EFEE5BCD-C7AD-450A-A788-E278A337B934}.tmp
+  Creating C:\Users\ru4en\AppData\Local\Temp\lnk{937C0EA0-A332-4602-8EA1-69AB9A41A624}.tmp
   
   Using codepage 1252 as default
   
-  C:\Users\ru4en\AppData\Local\Temp\lnk{6BB8D032-5A77-4F8F-9DE2-07CD9493AF05}.tmp.
+  C:\Users\ru4en\AppData\Local\Temp\lnk{174027F6-21D0-4A72-9401-35A2CF77F5DC}.tmp.
   Writing 24:1,	lang:0x409,	size 381
   
   Invoking cvtres.exe:
    /machine:amd64
    /verbose
-   /out:"C:\Users\ru4en\AppData\Local\Temp\lnk{22A0DFD1-E752-4A2D-A4F8-2E5D34D00094}.tmp"
+   /out:"C:\Users\ru4en\AppData\Local\Temp\lnk{0F4BB4A6-3BC5-43C3-8DE3-05120EBB1BBB}.tmp"
    /readonly
    "x64\Debug\SpringProject.res"
-   "C:\Users\ru4en\AppData\Local\Temp\lnk{EFEE5BCD-C7AD-450A-A788-E278A337B934}.tmp"
+   "C:\Users\ru4en\AppData\Local\Temp\lnk{937C0EA0-A332-4602-8EA1-69AB9A41A624}.tmp"
   Microsoft (R) Windows Resource To Object Converter Version 14.29.30136.0
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
@@ -981,8 +1078,9 @@
        sound.obj
        player.obj
        platform.obj
-       pizza.obj
+       orb.obj
        map.obj
+       menu.obj
        io.obj
        input.obj
        init.obj

@@ -51,10 +51,8 @@ static void logic(void)
 
 static void draw(void)
 {
-
-	SDL_SetRenderDrawColor(app.renderer, 20, 20, 20, 20);
-	SDL_RenderFillRect(app.renderer, NULL);
-
+	SDL_Texture* newGame = loadTexture("gfx/bg.jpg");
+	SDL_RenderCopy(app.renderer, newGame, NULL, NULL);
 	drawMap();
 
 	drawEntities();
@@ -76,7 +74,9 @@ static void drawHud(void)
 	SDL_RenderFillRect(app.renderer, &r);
 	SDL_SetRenderDrawBlendMode(app.renderer, SDL_BLENDMODE_NONE);
 
-	drawText(SCREEN_WIDTH - 5, 5, 255, 255, 255, TEXT_RIGHT, "PIZZA %d/%d", stage.pizzaFound, stage.pizzaTotal);
+	drawText(SCREEN_WIDTH - 5, 5, 255, 255, 255, TEXT_RIGHT, "ORBS %d/%d", stage.orbFound, stage.orbTotal);
 	drawText(SCREEN_WIDTH - 500, 5, 255, 255, 255, TEXT_RIGHT, "HEALTH %d", player->health);
-	drawText(SCREEN_WIDTH - 1000, 5, 255, 255, 255, TEXT_RIGHT, "Y %.1f X %.1f", player->y, player->x);
+	drawText(SCREEN_WIDTH - 1000, 5, 255, 255, 255, TEXT_RIGHT, "X %.1f Y %.1f", player->x, player->y);
+	drawText(SCREEN_WIDTH - 100, 5, 255, 255, 255, TEXT_RIGHT, "%d Bullet LEFT", stage.bulletCount);
+	//drawText(SCREEN_WIDTH - 1000, 5, 255, 255, 255, TEXT_RIGHT, "LEVEL %d", level);
 }

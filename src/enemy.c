@@ -24,6 +24,7 @@ void initEnemy(char* line)
 
 	e->tick = tick;
 	e->touch = touch;
+	e->flags = EF_PUSH;
 
 	texture[0] = loadTexture("gfx/alienF1.png");
 	texture[1] = loadTexture("gfx/alienB1.png");
@@ -31,7 +32,6 @@ void initEnemy(char* line)
 
 
 	SDL_QueryTexture(e->texture, NULL, NULL, &e->w, &e->h);
-	e->flags = EF_PUSH;
 }
 
 static void tick(void)
@@ -60,5 +60,6 @@ static void touch(Enemy* other)
 	if (other == player)
 	{
 		other->health -= 1; 
+
 	}
 }
