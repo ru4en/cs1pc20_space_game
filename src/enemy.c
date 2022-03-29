@@ -5,7 +5,6 @@ static void tick(void);
 static void touch(Entity* other);
 SDL_Texture* texture[1];
 
-
 void initEnemy(char* line)
 {
 	Enemy* e;
@@ -30,7 +29,6 @@ void initEnemy(char* line)
 	texture[1] = loadTexture("gfx/alienB1.png");
 	e->texture = texture[0];
 
-
 	SDL_QueryTexture(e->texture, NULL, NULL, &e->w, &e->h);
 }
 
@@ -44,7 +42,6 @@ static void tick(void)
 		self->dy *= PLATFORM_SPEED;
 		self->texture = texture[0];
 	}
-
 	if (abs(self->x - self->ex) < PLATFORM_SPEED)
 	{
 		calcSlope(self->sx, self->sy, self->x, self->y, &self->dx, &self->dy);
@@ -60,6 +57,5 @@ static void touch(Enemy* other)
 	if (other == player)
 	{
 		other->health -= 1; 
-
 	}
 }

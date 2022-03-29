@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{xurl}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{verbatim}
+
+\newenvironment{metaverbatim}{\verbatim}{\endverbatim}
+\DeclareUnicodeCharacter{001B}{\textendash}
+
+\definecolor{mygray}{rgb}{0.4,0.4,0.4}
+\definecolor{mygreen}{rgb}{0,0.8,0.6}
+\definecolor{myorange}{rgb}{1.0,0.4,0}
+
+\lstset{
+basicstyle=\footnotesize\sffamily\color{black},
+commentstyle=\color{mygray},
+frame=single,
+numbers=left,
+numbersep=9pt,
+numberstyle=\color{mygray},
+keywordstyle=\color{mygreen},
+showspaces=false,
+showstringspaces=false,
+stringstyle=\color{myorange},
+tabsize=2
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+    \includegraphics[width=0.3\linewidth]{./images/Reading_shield.png}
+    \par
+    \large{University of Reading}\par
+    \vspace{0.5 cm}
+    {Department of Computer Science}\par
+%Title
+    \vspace{0.5 cm}
+    {\Large     CS1PC20 - Programming in C++   \par} % Course ID and Project Title
+    {           Coursework 4 - Modifying a Game in C/C++    \par} % Coursework Subtitle
+%Author's name
+    {\Large     Ruben j. Lopes   \par} % First Name And Surname
+%Degree
+    \begin{center}
+        \begin{tabular}{p{0.35\linewidth}p{0.8\linewidth}}
+            Module Code: &         CS1PC20           \\ 
+            Report Title: &        Coursework 4           \\  
+            Student Number: &      30021591           \\
+            Date: &                28th March 2022           \\
+            hrs spent: &           25hr           \\
+            Git Repository: &      \url{https://csgitlab.reading.ac.uk/il021591/cs1pc20_Spring_Project.git}         \\ 
+            Lecturer: &            Dr Ashraf Mahmud           \\
+            Weighting of the Assignment: & 30\% \\
+            Assignment evaluation: & Impoved understanding and confidance programming in C. Learned the impartance of commenting and documentation for mantainance. 
+        \end{tabular}
+    \end{center}
+\end{center}
+
+\tableofcontents
+\input{chapters/appendix}
+
+\end{document}

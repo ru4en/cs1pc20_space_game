@@ -30,7 +30,7 @@ void initPlayer(void)
 	stage.entityTail = player;
 
 	player->health = 10;
-	stage.bulletCount = 100000;
+	stage.bulletCount = 100;
 
 	astronut[0] = loadTexture("gfx/astroF1.png"); // stand faceing right
 	astronut[1] = loadTexture("gfx/astroB1.png"); // stand faceing left
